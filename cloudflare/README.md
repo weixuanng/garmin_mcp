@@ -45,7 +45,7 @@ Dates are `YYYY-MM-DD` in the time zone set by `TIMEZONE` in `wrangler.jsonc`
 2. Configure the project:
    - **Project name:** `garmin-mcp` (must match `name` in `wrangler.jsonc`)
    - **Production branch:** `main`
-   - **Root directory:** `cloudflare`
+   - **Root directory:** `cloudflare` (no leading slash)
    - **Build command:** `npm test`
    - **Deploy command:** `npx wrangler deploy`
    - Optional, under **Build watch paths**: include `cloudflare/*`, so syncing
