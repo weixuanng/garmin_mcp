@@ -1,0 +1,1031 @@
+{
+  "payloads": {
+    "sleep_full": {
+      "dailySleepDTO": {
+        "id": 1759093200000,
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "sleepTimeSeconds": 28800,
+        "napTimeSeconds": 1200,
+        "sleepWindowConfirmed": true,
+        "sleepStartTimestampGMT": 1759093200000,
+        "sleepEndTimestampGMT": 1759121700000,
+        "sleepStartTimestampLocal": 1759122000000,
+        "sleepEndTimestampLocal": 1759150500000,
+        "unmeasurableSleepSeconds": 0,
+        "deepSleepSeconds": 3528,
+        "lightSleepSeconds": 15372,
+        "remSleepSeconds": 7560,
+        "awakeSleepSeconds": 2040,
+        "deviceRemCapable": true,
+        "averageSpO2Value": 95.0,
+        "lowestSpO2Value": 89,
+        "averageRespirationValue": 13.0,
+        "awakeCount": 2,
+        "avgSleepStress": 14.0,
+        "restingHeartRate": 49,
+        "restlessMomentsCount": 37,
+        "sleepScores": {
+          "totalDuration": {
+            "qualifierKey": "GOOD"
+          },
+          "overall": {
+            "value": 81,
+            "qualifierKey": "GOOD"
+          },
+          "remPercentage": {
+            "value": 29,
+            "qualifierKey": "EXCELLENT"
+          }
+        }
+      },
+      "sleepMovement": [
+        {
+          "startGMT": "2026-09-28T21:00:00.0",
+          "endGMT": "2026-09-28T21:01:00.0",
+          "activityLevel": 5.2
+        }
+      ],
+      "remSleepData": true,
+      "sleepLevels": [
+        {
+          "startGMT": "2026-09-28T21:00:00.0",
+          "endGMT": "2026-09-28T21:30:00.0",
+          "activityLevel": 1.0
+        }
+      ],
+      "restlessMomentsCount": 37,
+      "wellnessSpO2SleepSummaryDTO": {
+        "userProfilePk": 1,
+        "deviceId": 2,
+        "sleepMeasurementStartGMT": "2026-09-28T21:00:00.0",
+        "averageSpo2": 95.0,
+        "lowestSpo2": 89,
+        "averageHR": 52.0
+      },
+      "avgOvernightHrv": 48.3,
+      "hrvStatus": "BALANCED",
+      "bodyBatteryChange": 58,
+      "restingHeartRate": 49
+    },
+    "sleep_null_scores": {
+      "dailySleepDTO": {
+        "calendarDate": "2026-09-28",
+        "sleepTimeSeconds": 24000,
+        "napTimeSeconds": null,
+        "sleepStartTimestampGMT": 1759008000000,
+        "sleepEndTimestampGMT": 1759035000000,
+        "deepSleepSeconds": null,
+        "lightSleepSeconds": null,
+        "remSleepSeconds": 6000,
+        "awakeSleepSeconds": 1200,
+        "awakeCount": 1,
+        "avgSleepStress": null,
+        "restingHeartRate": 51,
+        "sleepScores": null
+      },
+      "wellnessSpO2SleepSummaryDTO": null,
+      "avgOvernightHrv": null
+    },
+    "sleep_no_dto": {
+      "dailySleepDTO": {},
+      "sleepMovement": [],
+      "avgOvernightHrv": 40
+    },
+    "readiness_list": [
+      {
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "timestamp": "2026-09-28T22:10:00.0",
+        "timestampLocal": "2026-09-29T06:10:00.0",
+        "deviceId": 2,
+        "level": "MODERATE",
+        "feedbackLong": "MOD_RT_HIGH_SS_GOOD",
+        "feedbackShort": "BALANCED_RECOVERY",
+        "score": 62,
+        "sleepScore": 81,
+        "sleepScoreFactorPercent": 72,
+        "sleepScoreFactorFeedback": "GOOD",
+        "recoveryTime": 430,
+        "recoveryTimeFactorPercent": 80,
+        "recoveryTimeFactorFeedback": "GOOD",
+        "acwrFactorPercent": 90,
+        "acwrFactorFeedback": "VERY_GOOD",
+        "acuteLoad": 320,
+        "stressHistoryFactorPercent": 70,
+        "stressHistoryFactorFeedback": "GOOD",
+        "hrvFactorPercent": 75,
+        "hrvFactorFeedback": "GOOD",
+        "hrvWeeklyAverage": 52,
+        "sleepHistoryFactorPercent": 68,
+        "sleepHistoryFactorFeedback": "MODERATE",
+        "validSleep": true,
+        "inputContext": "AFTER_WAKEUP_RESET",
+        "recoveryTimeChangePhrase": "NO_CHANGE"
+      },
+      {
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "timestamp": "2026-09-29T04:40:00.0",
+        "timestampLocal": "2026-09-29T12:40:00.0",
+        "deviceId": 2,
+        "level": "MODERATE",
+        "feedbackShort": "BALANCED_RECOVERY",
+        "score": 58,
+        "sleepScore": 81,
+        "recoveryTime": 0,
+        "recoveryTimeFactorPercent": 85,
+        "acuteLoad": 330,
+        "hrvWeeklyAverage": 52,
+        "inputContext": "UPDATE_REALTIME_VARIABLES",
+        "recoveryTimeChangePhrase": "DECREASING"
+      }
+    ],
+    "readiness_latest_unknown": [
+      {
+        "calendarDate": "2026-09-28",
+        "timestampLocal": "2026-09-28T06:00:00.0",
+        "score": 70,
+        "level": "HIGH",
+        "recoveryTime": 95,
+        "inputContext": "AFTER_WAKEUP_RESET"
+      },
+      {
+        "calendarDate": "2026-09-28",
+        "timestampLocal": "2026-09-28T18:00:00.0",
+        "score": 66,
+        "level": "MODERATE",
+        "recoveryTime": null,
+        "inputContext": "UPDATE_REALTIME_VARIABLES"
+      }
+    ],
+    "readiness_reached_zero": [
+      {
+        "calendarDate": "2026-09-27",
+        "timestampLocal": "2026-09-27T07:00:00.0",
+        "score": 88,
+        "level": "HIGH",
+        "recoveryTime": 540,
+        "recoveryTimeChangePhrase": "REACHED_ZERO",
+        "inputContext": "AFTER_WAKEUP_RESET"
+      }
+    ],
+    "readiness_no_morning": [
+      {
+        "calendarDate": "2026-09-26",
+        "timestampLocal": "2026-09-26T09:00:00.0",
+        "score": 50,
+        "level": "MODERATE",
+        "recoveryTime": 1500,
+        "inputContext": "UPDATE_REALTIME_VARIABLES"
+      }
+    ],
+    "readiness_upstream_fixture": {
+      "readinessScore": 75,
+      "readinessLevel": "GOOD",
+      "recoveryTime": 12,
+      "hrvStatus": "BALANCED",
+      "sleepQuality": "GOOD",
+      "sleepScore": 82,
+      "restingHeartRate": 55,
+      "hrvBaseline": 65,
+      "hrvLastNight": 68,
+      "bodyBattery": 85,
+      "stressLevel": 25
+    },
+    "activities": [
+      {
+        "activityId": 111,
+        "activityName": "Morning Run",
+        "beginTimestamp": 1727600000000,
+        "duration": 3600.5,
+        "recoveryTime": 1200
+      },
+      {
+        "activityId": 110,
+        "activityName": "Easy Ride",
+        "beginTimestamp": 1727500000000,
+        "duration": 1800,
+        "recoveryTime": 600
+      },
+      {
+        "activityId": 109,
+        "activityName": "No recovery",
+        "beginTimestamp": 1727700000000,
+        "duration": 1800
+      }
+    ],
+    "body_battery": [
+      {
+        "date": "2026-09-29",
+        "charged": 62,
+        "drained": 48,
+        "startTimestampGMT": "2026-09-28T16:00:00.0",
+        "endTimestampGMT": "2026-09-29T15:59:59.0",
+        "bodyBatteryValuesArray": [
+          [
+            1759075200000,
+            30
+          ],
+          [
+            1759104000000,
+            88
+          ]
+        ],
+        "bodyBatteryActivityEvent": [
+          {
+            "eventType": "SLEEP",
+            "eventStartTimeGmt": "2026-09-28T15:30:00.0",
+            "timezoneOffset": 28800000,
+            "durationInMilliseconds": 27010000,
+            "bodyBatteryImpact": 55,
+            "feedbackType": "NONE",
+            "shortFeedback": "SLEEP_RESTFUL"
+          },
+          {
+            "eventType": "NAP",
+            "eventStartTimeGmt": "2026-09-29T05:00:00.0",
+            "durationInMilliseconds": 1230000,
+            "bodyBatteryImpact": 4,
+            "shortFeedback": "NAP_RESTFUL"
+          }
+        ],
+        "bodyBatteryDynamicFeedbackEvent": {
+          "eventTimestampGmt": "2026-09-29T06:10:00.0",
+          "bodyBatteryLevel": "HIGH",
+          "feedbackShortType": "DAY_RECOVERING_AND_INACTIVE",
+          "feedbackLongType": "DAY_RECOVERING_AND_INACTIVE"
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "charged": 40,
+        "drained": 51,
+        "bodyBatteryActivityEvent": null,
+        "bodyBatteryDynamicFeedbackEvent": {}
+      }
+    ],
+    "body_battery_events": [
+      {
+        "event": {
+          "eventType": "SLEEP",
+          "eventStartTimeGmt": "2026-09-28T15:30:00.0",
+          "durationInMilliseconds": 27010000,
+          "bodyBatteryImpact": 55,
+          "shortFeedback": "SLEEP_RESTFUL"
+        },
+        "activityName": null,
+        "averageStress": 14.0,
+        "stressValuesArray": [],
+        "bodyBatteryValuesArray": []
+      }
+    ],
+    "rhr": {
+      "userProfileId": 1,
+      "statisticsStartDate": "2026-09-29",
+      "statisticsEndDate": "2026-09-29",
+      "allMetrics": {
+        "metricsMap": {
+          "WELLNESS_RESTING_HEART_RATE": [
+            {
+              "value": 49.0,
+              "calendarDate": "2026-09-29"
+            }
+          ]
+        }
+      },
+      "groupedMetrics": null
+    },
+    "heart_rates": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "maxHeartRate": 142,
+      "minHeartRate": 46,
+      "restingHeartRate": 49,
+      "lastSevenDaysAvgRestingHeartRate": 50,
+      "heartRateValues": [
+        [
+          1759075200000,
+          52
+        ],
+        [
+          1759075320000,
+          null
+        ],
+        [
+          1759075440000,
+          58
+        ],
+        [
+          1759075560000,
+          0
+        ],
+        [
+          1759075680000,
+          61
+        ]
+      ]
+    },
+    "stress": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "maxStressLevel": 88,
+      "avgStressLevel": 27,
+      "stressValuesArray": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          30
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          5,
+          55
+        ],
+        [
+          6,
+          80
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          8,
+          null
+        ],
+        [
+          9,
+          26
+        ]
+      ]
+    },
+    "respiration": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "lowestRespirationValue": 11.0,
+      "highestRespirationValue": 19.0,
+      "avgWakingRespirationValue": 14.25,
+      "avgSleepRespirationValue": 13.15,
+      "respirationValuesArray": []
+    },
+    "respiration_partial": {
+      "calendarDate": "2026-09-28",
+      "lowestRespirationValue": null,
+      "highestRespirationValue": 20.0,
+      "avgWakingRespirationValue": 15.0,
+      "avgSleepRespirationValue": null
+    },
+    "spo2": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "averageSpO2": 95.0,
+      "lowestSpO2": 89,
+      "latestSpO2": 96,
+      "latestSpO2TimestampLocal": "2026-09-29T06:05:00.0",
+      "lastSevenDaysAvgSpO2": 95.14,
+      "avgSleepSpO2": 95.0,
+      "spO2HourlyAverages": [
+        [
+          1759075200000,
+          95
+        ],
+        [
+          1759078800000,
+          94
+        ]
+      ]
+    },
+    "spo2_sparse": {
+      "calendarDate": "2026-09-28",
+      "averageSpO2": null,
+      "lowestSpO2": null,
+      "spO2HourlyAverages": []
+    },
+    "hrv": {
+      "userProfilePk": 1,
+      "hrvSummary": {
+        "calendarDate": "2026-09-29",
+        "weeklyAvg": 52,
+        "lastNightAvg": 48,
+        "lastNight5MinHigh": 71,
+        "baseline": {
+          "lowUpper": 41,
+          "balancedLow": 45,
+          "balancedUpper": 60,
+          "markerValue": 0.42
+        },
+        "status": "BALANCED",
+        "feedbackPhrase": "HRV_BALANCED_5",
+        "createTimeStamp": "2026-09-28T23:10:00.0"
+      },
+      "hrvReadings": [
+        {
+          "hrvValue": 45,
+          "readingTimeGMT": "2026-09-28T15:35:00.0",
+          "readingTimeLocal": "2026-09-28T23:35:00.0"
+        },
+        {
+          "hrvValue": 51,
+          "readingTimeGMT": "2026-09-28T15:40:00.0",
+          "readingTimeLocal": "2026-09-28T23:40:00.0"
+        }
+      ],
+      "startTimestampGMT": "2026-09-28T15:30:00.0",
+      "sleepStartTimestampLocal": "2026-09-28T23:30:00.0",
+      "sleepEndTimestampLocal": "2026-09-29T07:25:00.0"
+    },
+    "hrv_low": {
+      "hrvSummary": {
+        "calendarDate": "2026-09-27",
+        "weeklyAvg": 49.4,
+        "lastNightAvg": 39.95,
+        "lastNight5MinHigh": null,
+        "baseline": null,
+        "status": "UNBALANCED",
+        "feedbackPhrase": "HRV_UNBALANCED_2"
+      },
+      "hrvReadings": null
+    },
+    "hrv_null_summary": {
+      "hrvSummary": null,
+      "hrvReadings": []
+    }
+  },
+  "cases": [
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full"
+      },
+      "expected": "{\n  \"sleep_seconds\": 28800,\n  \"nap_seconds\": 1200,\n  \"sleep_start\": 1759093200000,\n  \"sleep_end\": 1759121700000,\n  \"sleep_score\": 81,\n  \"sleep_score_qualifier\": \"GOOD\",\n  \"deep_sleep_seconds\": 3528,\n  \"light_sleep_seconds\": 15372,\n  \"rem_sleep_seconds\": 7560,\n  \"awake_seconds\": 2040,\n  \"awake_count\": 2,\n  \"restless_moments_count\": 37,\n  \"avg_sleep_stress\": 14.0,\n  \"resting_heart_rate_bpm\": 49,\n  \"avg_spo2_percent\": 95.0,\n  \"lowest_spo2_percent\": 89,\n  \"avg_overnight_hrv\": 48.3,\n  \"deep_sleep_percent\": 12.2,\n  \"light_sleep_percent\": 53.4,\n  \"rem_sleep_percent\": 26.2,\n  \"sleep_hours\": 8.0\n}",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60": "sleep_null_scores"
+      },
+      "expected": "{\n  \"sleep_seconds\": 24000,\n  \"sleep_start\": 1759008000000,\n  \"sleep_end\": 1759035000000,\n  \"rem_sleep_seconds\": 6000,\n  \"awake_seconds\": 1200,\n  \"awake_count\": 1,\n  \"resting_heart_rate_bpm\": 51,\n  \"rem_sleep_percent\": 25.0,\n  \"sleep_hours\": 6.67\n}",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60": "sleep_no_dto"
+      },
+      "expected": "{\n  \"avg_overnight_hrv\": 40\n}",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {},
+      "expected": "No sleep summary found for 2026-09-26",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-26&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full"
+      },
+      "expected": "{\n  \"dailySleepDTO\": {\n    \"id\": 1759093200000,\n    \"userProfilePK\": 1,\n    \"calendarDate\": \"2026-09-29\",\n    \"sleepTimeSeconds\": 28800,\n    \"napTimeSeconds\": 1200,\n    \"sleepWindowConfirmed\": true,\n    \"sleepStartTimestampGMT\": 1759093200000,\n    \"sleepEndTimestampGMT\": 1759121700000,\n    \"sleepStartTimestampLocal\": 1759122000000,\n    \"sleepEndTimestampLocal\": 1759150500000,\n    \"unmeasurableSleepSeconds\": 0,\n    \"deepSleepSeconds\": 3528,\n    \"lightSleepSeconds\": 15372,\n    \"remSleepSeconds\": 7560,\n    \"awakeSleepSeconds\": 2040,\n    \"deviceRemCapable\": true,\n    \"averageSpO2Value\": 95.0,\n    \"lowestSpO2Value\": 89,\n    \"averageRespirationValue\": 13.0,\n    \"awakeCount\": 2,\n    \"avgSleepStress\": 14.0,\n    \"restingHeartRate\": 49,\n    \"restlessMomentsCount\": 37,\n    \"sleepScores\": {\n      \"totalDuration\": {\n        \"qualifierKey\": \"GOOD\"\n      },\n      \"overall\": {\n        \"value\": 81,\n        \"qualifierKey\": \"GOOD\"\n      },\n      \"remPercentage\": {\n        \"value\": 29,\n        \"qualifierKey\": \"EXCELLENT\"\n      }\n    }\n  },\n  \"sleepMovement\": [\n    {\n      \"startGMT\": \"2026-09-28T21:00:00.0\",\n      \"endGMT\": \"2026-09-28T21:01:00.0\",\n      \"activityLevel\": 5.2\n    }\n  ],\n  \"remSleepData\": true,\n  \"sleepLevels\": [\n    {\n      \"startGMT\": \"2026-09-28T21:00:00.0\",\n      \"endGMT\": \"2026-09-28T21:30:00.0\",\n      \"activityLevel\": 1.0\n    }\n  ],\n  \"restlessMomentsCount\": 37,\n  \"wellnessSpO2SleepSummaryDTO\": {\n    \"userProfilePk\": 1,\n    \"deviceId\": 2,\n    \"sleepMeasurementStartGMT\": \"2026-09-28T21:00:00.0\",\n    \"averageSpo2\": 95.0,\n    \"lowestSpo2\": 89,\n    \"averageHR\": 52.0\n  },\n  \"avgOvernightHrv\": 48.3,\n  \"hrvStatus\": \"BALANCED\",\n  \"bodyBatteryChange\": 58,\n  \"restingHeartRate\": 49\n}",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_data",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {},
+      "expected": "No sleep data found for 2026-09-26",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-26&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60": "sleep_null_scores",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60": "sleep_no_dto"
+      },
+      "expected": "{\n  \"start_date\": \"2026-09-26\",\n  \"end_date\": \"2026-09-29\",\n  \"nights_requested\": 4,\n  \"nights_returned\": 3,\n  \"nights\": [\n    {\n      \"date\": \"2026-09-27\",\n      \"avg_overnight_hrv\": 40\n    },\n    {\n      \"date\": \"2026-09-28\",\n      \"sleep_seconds\": 24000,\n      \"sleep_start\": 1759008000000,\n      \"sleep_end\": 1759035000000,\n      \"rem_sleep_seconds\": 6000,\n      \"awake_seconds\": 1200,\n      \"awake_count\": 1,\n      \"resting_heart_rate_bpm\": 51,\n      \"rem_sleep_percent\": 25.0,\n      \"sleep_hours\": 6.67\n    },\n    {\n      \"date\": \"2026-09-29\",\n      \"sleep_seconds\": 28800,\n      \"nap_seconds\": 1200,\n      \"sleep_start\": 1759093200000,\n      \"sleep_end\": 1759121700000,\n      \"sleep_score\": 81,\n      \"sleep_score_qualifier\": \"GOOD\",\n      \"deep_sleep_seconds\": 3528,\n      \"light_sleep_seconds\": 15372,\n      \"rem_sleep_seconds\": 7560,\n      \"awake_seconds\": 2040,\n      \"awake_count\": 2,\n      \"restless_moments_count\": 37,\n      \"avg_sleep_stress\": 14.0,\n      \"resting_heart_rate_bpm\": 49,\n      \"avg_spo2_percent\": 95.0,\n      \"lowest_spo2_percent\": 89,\n      \"avg_overnight_hrv\": 48.3,\n      \"deep_sleep_percent\": 12.2,\n      \"light_sleep_percent\": 53.4,\n      \"rem_sleep_percent\": 26.2,\n      \"sleep_hours\": 8.0\n    }\n  ]\n}",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-26&nonSleepBufferMinutes=60",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {},
+      "expected": "No sleep data found between 2026-09-20 and 2026-09-21.",
+      "requests": [
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-20&nonSleepBufferMinutes=60",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-21&nonSleepBufferMinutes=60"
+      ]
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-29",
+        "end_date": "2026-09-28"
+      },
+      "routes": {},
+      "expected": "end_date must be on or after start_date.",
+      "requests": []
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"last_night_avg_hrv_ms\": 48,\n  \"last_night_5min_high_hrv_ms\": 71,\n  \"weekly_avg_hrv_ms\": 52,\n  \"baseline_balanced_low_ms\": 45,\n  \"baseline_balanced_upper_ms\": 60,\n  \"baseline_low_upper_ms\": 41,\n  \"status\": \"BALANCED\",\n  \"feedback\": \"HRV_BALANCED_5\",\n  \"sleep_start\": \"2026-09-28T23:30:00.0\",\n  \"sleep_end\": \"2026-09-29T07:25:00.0\"\n}",
+      "requests": [
+        "/hrv-service/hrv/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-29",
+        "return_timeseries": true
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"last_night_avg_hrv_ms\": 48,\n  \"last_night_5min_high_hrv_ms\": 71,\n  \"weekly_avg_hrv_ms\": 52,\n  \"baseline_balanced_low_ms\": 45,\n  \"baseline_balanced_upper_ms\": 60,\n  \"baseline_low_upper_ms\": 41,\n  \"status\": \"BALANCED\",\n  \"feedback\": \"HRV_BALANCED_5\",\n  \"sleep_start\": \"2026-09-28T23:30:00.0\",\n  \"sleep_end\": \"2026-09-29T07:25:00.0\",\n  \"hrv_readings\": [\n    {\n      \"time\": \"2026-09-28T23:35:00.0\",\n      \"hrv_ms\": 45\n    },\n    {\n      \"time\": \"2026-09-28T23:40:00.0\",\n      \"hrv_ms\": 51\n    }\n  ],\n  \"readings_count\": 2\n}",
+      "requests": [
+        "/hrv-service/hrv/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-27": "hrv_low"
+      },
+      "expected": "{\n  \"date\": \"2026-09-27\",\n  \"last_night_avg_hrv_ms\": 39.95,\n  \"weekly_avg_hrv_ms\": 49.4,\n  \"status\": \"UNBALANCED\",\n  \"feedback\": \"HRV_UNBALANCED_2\"\n}",
+      "requests": [
+        "/hrv-service/hrv/2026-09-27"
+      ]
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-25"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-25": "hrv_null_summary"
+      },
+      "expected": "{\n  \"date\": \"2026-09-25\"\n}",
+      "requests": [
+        "/hrv-service/hrv/2026-09-25"
+      ]
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-24"
+      },
+      "routes": {},
+      "expected": "No HRV data found for 2026-09-24.",
+      "requests": [
+        "/hrv-service/hrv/2026-09-24"
+      ]
+    },
+    {
+      "tool": "get_hrv_trend",
+      "args": {
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv",
+        "/hrv-service/hrv/2026-09-27": "hrv_low",
+        "/hrv-service/hrv/2026-09-26": "hrv_null_summary"
+      },
+      "expected": "{\n  \"start_date\": \"2026-09-26\",\n  \"end_date\": \"2026-09-29\",\n  \"days_with_data\": 2,\n  \"period_avg_hrv_ms\": 44.0,\n  \"trend\": [\n    {\n      \"date\": \"2026-09-27\",\n      \"last_night_avg_hrv_ms\": 40.0,\n      \"weekly_avg_hrv_ms\": 49.4,\n      \"status\": \"UNBALANCED\",\n      \"feedback\": \"HRV_UNBALANCED_2\"\n    },\n    {\n      \"date\": \"2026-09-29\",\n      \"last_night_avg_hrv_ms\": 48,\n      \"weekly_avg_hrv_ms\": 52,\n      \"last_night_5min_high_hrv_ms\": 71,\n      \"status\": \"BALANCED\",\n      \"feedback\": \"HRV_BALANCED_5\"\n    }\n  ]\n}",
+      "requests": [
+        "/hrv-service/hrv/2026-09-26",
+        "/hrv-service/hrv/2026-09-27",
+        "/hrv-service/hrv/2026-09-28",
+        "/hrv-service/hrv/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_hrv_trend",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {},
+      "expected": "No HRV data found between 2026-09-20 and 2026-09-21.",
+      "requests": [
+        "/hrv-service/hrv/2026-09-20",
+        "/hrv-service/hrv/2026-09-21"
+      ]
+    },
+    {
+      "tool": "get_body_battery",
+      "args": {
+        "start_date": "2026-09-28",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/bodyBattery/reports/daily?endDate=2026-09-29&startDate=2026-09-28": "body_battery"
+      },
+      "expected": "[\n  {\n    \"date\": \"2026-09-29\",\n    \"charged\": 62,\n    \"drained\": 48,\n    \"events\": [\n      {\n        \"type\": \"SLEEP\",\n        \"start_time\": \"2026-09-28T15:30:00.0\",\n        \"duration_minutes\": 450.2,\n        \"body_battery_impact\": 55,\n        \"feedback\": \"SLEEP_RESTFUL\"\n      },\n      {\n        \"type\": \"NAP\",\n        \"start_time\": \"2026-09-29T05:00:00.0\",\n        \"duration_minutes\": 20.5,\n        \"body_battery_impact\": 4,\n        \"feedback\": \"NAP_RESTFUL\"\n      }\n    ],\n    \"current_feedback\": \"DAY_RECOVERING_AND_INACTIVE\",\n    \"body_battery_level\": \"HIGH\"\n  },\n  {\n    \"date\": \"2026-09-28\",\n    \"charged\": 40,\n    \"drained\": 51,\n    \"events\": []\n  }\n]",
+      "requests": [
+        "/wellness-service/wellness/bodyBattery/reports/daily?endDate=2026-09-29&startDate=2026-09-28"
+      ]
+    },
+    {
+      "tool": "get_body_battery",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {},
+      "expected": "No body battery data found between 2026-09-20 and 2026-09-21",
+      "requests": [
+        "/wellness-service/wellness/bodyBattery/reports/daily?endDate=2026-09-21&startDate=2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_body_battery_events",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/bodyBattery/events/2026-09-29": "body_battery_events"
+      },
+      "expected": "[\n  {\n    \"event\": {\n      \"eventType\": \"SLEEP\",\n      \"eventStartTimeGmt\": \"2026-09-28T15:30:00.0\",\n      \"durationInMilliseconds\": 27010000,\n      \"bodyBatteryImpact\": 55,\n      \"shortFeedback\": \"SLEEP_RESTFUL\"\n    },\n    \"activityName\": null,\n    \"averageStress\": 14.0,\n    \"stressValuesArray\": [],\n    \"bodyBatteryValuesArray\": []\n  }\n]",
+      "requests": [
+        "/wellness-service/wellness/bodyBattery/events/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_body_battery_events",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No body battery events found for 2026-09-20",
+      "requests": [
+        "/wellness-service/wellness/bodyBattery/events/2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_training_readiness",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      },
+      "expected": "[\n  {\n    \"date\": \"2026-09-29\",\n    \"timestamp\": \"2026-09-29T06:10:00.0\",\n    \"context\": \"AFTER_WAKEUP_RESET\",\n    \"level\": \"MODERATE\",\n    \"score\": 62,\n    \"feedback\": \"BALANCED_RECOVERY\",\n    \"sleep_score\": 81,\n    \"sleep_factor_percent\": 72,\n    \"sleep_factor_feedback\": \"GOOD\",\n    \"recovery_time_hours\": 7.2,\n    \"recovery_factor_percent\": 80,\n    \"recovery_factor_feedback\": \"GOOD\",\n    \"training_load_factor_percent\": 90,\n    \"training_load_feedback\": \"VERY_GOOD\",\n    \"acute_load\": 320,\n    \"hrv_factor_percent\": 75,\n    \"hrv_factor_feedback\": \"GOOD\",\n    \"hrv_weekly_avg\": 52,\n    \"stress_history_factor_percent\": 70,\n    \"stress_history_feedback\": \"GOOD\",\n    \"sleep_history_factor_percent\": 68,\n    \"sleep_history_feedback\": \"MODERATE\"\n  },\n  {\n    \"date\": \"2026-09-29\",\n    \"timestamp\": \"2026-09-29T12:40:00.0\",\n    \"context\": \"UPDATE_REALTIME_VARIABLES\",\n    \"level\": \"MODERATE\",\n    \"score\": 58,\n    \"feedback\": \"BALANCED_RECOVERY\",\n    \"sleep_score\": 81,\n    \"recovery_factor_percent\": 85,\n    \"acute_load\": 330,\n    \"hrv_weekly_avg\": 52\n  }\n]",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_training_readiness",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No training readiness data found for 2026-09-20",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"recovery_time_hours\": 7.2,\n  \"sleep_score\": 81,\n  \"acute_load\": 320\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-26": "readiness_no_morning"
+      },
+      "expected": "{\n  \"date\": \"2026-09-26\",\n  \"recovery_time_hours\": 25.0\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-26"
+      ]
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-25"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-25": "readiness_upstream_fixture"
+      },
+      "expected": "{\n  \"date\": \"2026-09-25\",\n  \"readiness_score\": 75,\n  \"readiness_level\": \"GOOD\",\n  \"recovery_time_hours\": 0.2,\n  \"hrv_status\": \"BALANCED\",\n  \"sleep_quality\": \"GOOD\",\n  \"sleep_score\": 82,\n  \"resting_heart_rate_bpm\": 55,\n  \"hrv_baseline\": 65,\n  \"hrv_last_night\": 68,\n  \"body_battery_percent\": 85,\n  \"stress_level\": 25\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-25"
+      ]
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No morning training readiness data found for 2026-09-20",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      },
+      "expected": "{\n  \"remaining_hours\": 0.0,\n  \"recovery_score\": 58,\n  \"state\": \"recovered\",\n  \"source\": \"training_readiness\",\n  \"date\": \"2026-09-29\",\n  \"timestamp\": \"2026-09-29T12:40:00.0\",\n  \"change_phrase\": \"DECREASING\",\n  \"level\": \"MODERATE\"\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-28": "readiness_latest_unknown"
+      },
+      "expected": "{\n  \"remaining_hours\": 1.6,\n  \"recovery_score\": 70,\n  \"state\": \"nearly_recovered\",\n  \"source\": \"morning_training_readiness\",\n  \"date\": \"2026-09-28\",\n  \"timestamp\": \"2026-09-28T06:00:00.0\",\n  \"level\": \"HIGH\"\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-28"
+      ]
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-27": "readiness_reached_zero"
+      },
+      "expected": "{\n  \"remaining_hours\": 0.0,\n  \"recovery_score\": 88,\n  \"state\": \"recovered\",\n  \"source\": \"training_readiness\",\n  \"date\": \"2026-09-27\",\n  \"timestamp\": \"2026-09-27T07:00:00.0\",\n  \"change_phrase\": \"REACHED_ZERO\",\n  \"level\": \"HIGH\"\n}",
+      "requests": [
+        "/metrics-service/metrics/trainingreadiness/2026-09-27"
+      ]
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-24"
+      },
+      "routes": {
+        "/activitylist-service/activities/search/activities?limit=20&start=0": "activities"
+      },
+      "expected": "{\n  \"remaining_hours\": 0.0,\n  \"state\": \"recovered\",\n  \"source\": \"recent_activity\",\n  \"activity_id\": 111,\n  \"activity_name\": \"Morning Run\",\n  \"date\": \"2026-09-24\"\n}",
+      "requests": [
+        "/activitylist-service/activities/search/activities?limit=20&start=0",
+        "/metrics-service/metrics/trainingreadiness/2026-09-24"
+      ]
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-23"
+      },
+      "routes": {},
+      "expected": "{\n  \"remaining_hours\": null,\n  \"recovery_score\": null,\n  \"state\": \"unavailable\",\n  \"date\": \"2026-09-23\",\n  \"message\": \"No recovery time remaining found for this date. Training Readiness snapshots were empty and recent activities did not include recoveryTime. Some devices (for example Forerunner 255) show recovery on-device without publishing a Connect Training Readiness feed.\"\n}",
+      "requests": [
+        "/activitylist-service/activities/search/activities?limit=20&start=0",
+        "/metrics-service/metrics/trainingreadiness/2026-09-23"
+      ]
+    },
+    {
+      "tool": "get_rhr_day",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/userstats-service/wellness/daily/tester?fromDate=2026-09-29&metricId=60&untilDate=2026-09-29": "rhr"
+      },
+      "expected": "{\n  \"userProfileId\": 1,\n  \"statisticsStartDate\": \"2026-09-29\",\n  \"statisticsEndDate\": \"2026-09-29\",\n  \"allMetrics\": {\n    \"metricsMap\": {\n      \"WELLNESS_RESTING_HEART_RATE\": [\n        {\n          \"value\": 49.0,\n          \"calendarDate\": \"2026-09-29\"\n        }\n      ]\n    }\n  },\n  \"groupedMetrics\": null\n}",
+      "requests": [
+        "/userstats-service/wellness/daily/tester?fromDate=2026-09-29&metricId=60&untilDate=2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_rhr_day",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No resting heart rate data found for 2026-09-20",
+      "requests": [
+        "/userstats-service/wellness/daily/tester?fromDate=2026-09-20&metricId=60&untilDate=2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_heart_rates_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailyHeartRate/tester?date=2026-09-29": "heart_rates"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"max_heart_rate_bpm\": 142,\n  \"min_heart_rate_bpm\": 46,\n  \"resting_heart_rate_bpm\": 49,\n  \"last_7_days_avg_resting_hr\": 50,\n  \"avg_heart_rate_bpm\": 57.0,\n  \"data_points_count\": 3\n}",
+      "requests": [
+        "/wellness-service/wellness/dailyHeartRate/tester?date=2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_heart_rates_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No heart rate data found for 2026-09-20",
+      "requests": [
+        "/wellness-service/wellness/dailyHeartRate/tester?date=2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_stress_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailyStress/2026-09-29": "stress"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"max_stress_level\": 88,\n  \"avg_stress_level\": 27,\n  \"rest_percent\": 33.3,\n  \"low_stress_percent\": 33.3,\n  \"medium_stress_percent\": 16.7,\n  \"high_stress_percent\": 16.7,\n  \"data_points_count\": 6\n}",
+      "requests": [
+        "/wellness-service/wellness/dailyStress/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_stress_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No stress data found for 2026-09-20",
+      "requests": [
+        "/wellness-service/wellness/dailyStress/2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_respiration_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/respiration/2026-09-29": "respiration"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"lowest_breaths_per_min\": 11.0,\n  \"highest_breaths_per_min\": 19.0,\n  \"avg_waking_breaths_per_min\": 14.25,\n  \"avg_sleep_breaths_per_min\": 13.15\n}",
+      "requests": [
+        "/wellness-service/wellness/daily/respiration/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_respiration_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No respiration data found for 2026-09-20",
+      "requests": [
+        "/wellness-service/wellness/daily/respiration/2026-09-20"
+      ]
+    },
+    {
+      "tool": "get_respiration_trend",
+      "args": {
+        "start_date": "2026-09-27",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/respiration/2026-09-29": "respiration",
+        "/wellness-service/wellness/daily/respiration/2026-09-28": "respiration_partial"
+      },
+      "expected": "{\n  \"start_date\": \"2026-09-27\",\n  \"end_date\": \"2026-09-29\",\n  \"days_with_data\": 2,\n  \"period_avg_sleep_breaths_per_min\": 13.2,\n  \"trend\": [\n    {\n      \"date\": \"2026-09-28\",\n      \"avg_waking_breaths_per_min\": 15.0,\n      \"highest_breaths_per_min\": 20.0\n    },\n    {\n      \"date\": \"2026-09-29\",\n      \"avg_waking_breaths_per_min\": 14.2,\n      \"avg_sleep_breaths_per_min\": 13.2,\n      \"highest_breaths_per_min\": 19.0,\n      \"lowest_breaths_per_min\": 11.0\n    }\n  ]\n}",
+      "requests": [
+        "/wellness-service/wellness/daily/respiration/2026-09-27",
+        "/wellness-service/wellness/daily/respiration/2026-09-28",
+        "/wellness-service/wellness/daily/respiration/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_respiration_trend",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {},
+      "expected": "No respiration data found between 2026-09-20 and 2026-09-21.",
+      "requests": [
+        "/wellness-service/wellness/daily/respiration/2026-09-20",
+        "/wellness-service/wellness/daily/respiration/2026-09-21"
+      ]
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/spo2/2026-09-29": "spo2"
+      },
+      "expected": "{\n  \"date\": \"2026-09-29\",\n  \"avg_spo2_percent\": 95.0,\n  \"lowest_spo2_percent\": 89,\n  \"latest_spo2_percent\": 96,\n  \"latest_reading_time\": \"2026-09-29T06:05:00.0\",\n  \"last_7_days_avg_spo2\": 95.14,\n  \"avg_sleep_spo2_percent\": 95.0,\n  \"hourly_averages\": [\n    [\n      1759075200000,\n      95\n    ],\n    [\n      1759078800000,\n      94\n    ]\n  ]\n}",
+      "requests": [
+        "/wellness-service/wellness/daily/spo2/2026-09-29"
+      ]
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/spo2/2026-09-28": "spo2_sparse"
+      },
+      "expected": "{\n  \"date\": \"2026-09-28\"\n}",
+      "requests": [
+        "/wellness-service/wellness/daily/spo2/2026-09-28"
+      ]
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {},
+      "expected": "No SpO2 data found for 2026-09-20",
+      "requests": [
+        "/wellness-service/wellness/daily/spo2/2026-09-20"
+      ]
+    }
+  ]
+}

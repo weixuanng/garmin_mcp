@@ -1,0 +1,3 @@
+# Copy to .dev.vars for `npm run dev`. Secrets in production are set with
+# `npx wrangler secret put SETUP_PASSCODE`.
+SETUP_PASSCODE=change-me-please

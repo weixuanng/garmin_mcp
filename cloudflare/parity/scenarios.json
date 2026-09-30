@@ -1,0 +1,845 @@
+{
+  "_comment": "Garmin API payloads keyed by connectapi path + sorted query. generate_golden.py runs the upstream Python tools over these through the real garminconnect library; test/parity.test.ts runs the TypeScript tools over the same payloads and compares.",
+  "payloads": {
+    "sleep_full": {
+      "dailySleepDTO": {
+        "id": 1759093200000,
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "sleepTimeSeconds": 28800,
+        "napTimeSeconds": 1200,
+        "sleepWindowConfirmed": true,
+        "sleepStartTimestampGMT": 1759093200000,
+        "sleepEndTimestampGMT": 1759121700000,
+        "sleepStartTimestampLocal": 1759122000000,
+        "sleepEndTimestampLocal": 1759150500000,
+        "unmeasurableSleepSeconds": 0,
+        "deepSleepSeconds": 3528,
+        "lightSleepSeconds": 15372,
+        "remSleepSeconds": 7560,
+        "awakeSleepSeconds": 2040,
+        "deviceRemCapable": true,
+        "averageSpO2Value": 95.0,
+        "lowestSpO2Value": 89,
+        "averageRespirationValue": 13.0,
+        "awakeCount": 2,
+        "avgSleepStress": 14.0,
+        "restingHeartRate": 49,
+        "restlessMomentsCount": 37,
+        "sleepScores": {
+          "totalDuration": {
+            "qualifierKey": "GOOD"
+          },
+          "overall": {
+            "value": 81,
+            "qualifierKey": "GOOD"
+          },
+          "remPercentage": {
+            "value": 29,
+            "qualifierKey": "EXCELLENT"
+          }
+        }
+      },
+      "sleepMovement": [
+        {
+          "startGMT": "2026-09-28T21:00:00.0",
+          "endGMT": "2026-09-28T21:01:00.0",
+          "activityLevel": 5.2
+        }
+      ],
+      "remSleepData": true,
+      "sleepLevels": [
+        {
+          "startGMT": "2026-09-28T21:00:00.0",
+          "endGMT": "2026-09-28T21:30:00.0",
+          "activityLevel": 1.0
+        }
+      ],
+      "restlessMomentsCount": 37,
+      "wellnessSpO2SleepSummaryDTO": {
+        "userProfilePk": 1,
+        "deviceId": 2,
+        "sleepMeasurementStartGMT": "2026-09-28T21:00:00.0",
+        "averageSpo2": 95.0,
+        "lowestSpo2": 89,
+        "averageHR": 52.0
+      },
+      "avgOvernightHrv": 48.3,
+      "hrvStatus": "BALANCED",
+      "bodyBatteryChange": 58,
+      "restingHeartRate": 49
+    },
+    "sleep_null_scores": {
+      "dailySleepDTO": {
+        "calendarDate": "2026-09-28",
+        "sleepTimeSeconds": 24000,
+        "napTimeSeconds": null,
+        "sleepStartTimestampGMT": 1759008000000,
+        "sleepEndTimestampGMT": 1759035000000,
+        "deepSleepSeconds": null,
+        "lightSleepSeconds": null,
+        "remSleepSeconds": 6000,
+        "awakeSleepSeconds": 1200,
+        "awakeCount": 1,
+        "avgSleepStress": null,
+        "restingHeartRate": 51,
+        "sleepScores": null
+      },
+      "wellnessSpO2SleepSummaryDTO": null,
+      "avgOvernightHrv": null
+    },
+    "sleep_no_dto": {
+      "dailySleepDTO": {},
+      "sleepMovement": [],
+      "avgOvernightHrv": 40
+    },
+    "readiness_list": [
+      {
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "timestamp": "2026-09-28T22:10:00.0",
+        "timestampLocal": "2026-09-29T06:10:00.0",
+        "deviceId": 2,
+        "level": "MODERATE",
+        "feedbackLong": "MOD_RT_HIGH_SS_GOOD",
+        "feedbackShort": "BALANCED_RECOVERY",
+        "score": 62,
+        "sleepScore": 81,
+        "sleepScoreFactorPercent": 72,
+        "sleepScoreFactorFeedback": "GOOD",
+        "recoveryTime": 430,
+        "recoveryTimeFactorPercent": 80,
+        "recoveryTimeFactorFeedback": "GOOD",
+        "acwrFactorPercent": 90,
+        "acwrFactorFeedback": "VERY_GOOD",
+        "acuteLoad": 320,
+        "stressHistoryFactorPercent": 70,
+        "stressHistoryFactorFeedback": "GOOD",
+        "hrvFactorPercent": 75,
+        "hrvFactorFeedback": "GOOD",
+        "hrvWeeklyAverage": 52,
+        "sleepHistoryFactorPercent": 68,
+        "sleepHistoryFactorFeedback": "MODERATE",
+        "validSleep": true,
+        "inputContext": "AFTER_WAKEUP_RESET",
+        "recoveryTimeChangePhrase": "NO_CHANGE"
+      },
+      {
+        "userProfilePK": 1,
+        "calendarDate": "2026-09-29",
+        "timestamp": "2026-09-29T04:40:00.0",
+        "timestampLocal": "2026-09-29T12:40:00.0",
+        "deviceId": 2,
+        "level": "MODERATE",
+        "feedbackShort": "BALANCED_RECOVERY",
+        "score": 58,
+        "sleepScore": 81,
+        "recoveryTime": 0,
+        "recoveryTimeFactorPercent": 85,
+        "acuteLoad": 330,
+        "hrvWeeklyAverage": 52,
+        "inputContext": "UPDATE_REALTIME_VARIABLES",
+        "recoveryTimeChangePhrase": "DECREASING"
+      }
+    ],
+    "readiness_latest_unknown": [
+      {
+        "calendarDate": "2026-09-28",
+        "timestampLocal": "2026-09-28T06:00:00.0",
+        "score": 70,
+        "level": "HIGH",
+        "recoveryTime": 95,
+        "inputContext": "AFTER_WAKEUP_RESET"
+      },
+      {
+        "calendarDate": "2026-09-28",
+        "timestampLocal": "2026-09-28T18:00:00.0",
+        "score": 66,
+        "level": "MODERATE",
+        "recoveryTime": null,
+        "inputContext": "UPDATE_REALTIME_VARIABLES"
+      }
+    ],
+    "readiness_reached_zero": [
+      {
+        "calendarDate": "2026-09-27",
+        "timestampLocal": "2026-09-27T07:00:00.0",
+        "score": 88,
+        "level": "HIGH",
+        "recoveryTime": 540,
+        "recoveryTimeChangePhrase": "REACHED_ZERO",
+        "inputContext": "AFTER_WAKEUP_RESET"
+      }
+    ],
+    "readiness_no_morning": [
+      {
+        "calendarDate": "2026-09-26",
+        "timestampLocal": "2026-09-26T09:00:00.0",
+        "score": 50,
+        "level": "MODERATE",
+        "recoveryTime": 1500,
+        "inputContext": "UPDATE_REALTIME_VARIABLES"
+      }
+    ],
+    "readiness_upstream_fixture": {
+      "readinessScore": 75,
+      "readinessLevel": "GOOD",
+      "recoveryTime": 12,
+      "hrvStatus": "BALANCED",
+      "sleepQuality": "GOOD",
+      "sleepScore": 82,
+      "restingHeartRate": 55,
+      "hrvBaseline": 65,
+      "hrvLastNight": 68,
+      "bodyBattery": 85,
+      "stressLevel": 25
+    },
+    "activities": [
+      {
+        "activityId": 111,
+        "activityName": "Morning Run",
+        "beginTimestamp": 1727600000000,
+        "duration": 3600.5,
+        "recoveryTime": 1200
+      },
+      {
+        "activityId": 110,
+        "activityName": "Easy Ride",
+        "beginTimestamp": 1727500000000,
+        "duration": 1800,
+        "recoveryTime": 600
+      },
+      {
+        "activityId": 109,
+        "activityName": "No recovery",
+        "beginTimestamp": 1727700000000,
+        "duration": 1800
+      }
+    ],
+    "body_battery": [
+      {
+        "date": "2026-09-29",
+        "charged": 62,
+        "drained": 48,
+        "startTimestampGMT": "2026-09-28T16:00:00.0",
+        "endTimestampGMT": "2026-09-29T15:59:59.0",
+        "bodyBatteryValuesArray": [
+          [
+            1759075200000,
+            30
+          ],
+          [
+            1759104000000,
+            88
+          ]
+        ],
+        "bodyBatteryActivityEvent": [
+          {
+            "eventType": "SLEEP",
+            "eventStartTimeGmt": "2026-09-28T15:30:00.0",
+            "timezoneOffset": 28800000,
+            "durationInMilliseconds": 27010000,
+            "bodyBatteryImpact": 55,
+            "feedbackType": "NONE",
+            "shortFeedback": "SLEEP_RESTFUL"
+          },
+          {
+            "eventType": "NAP",
+            "eventStartTimeGmt": "2026-09-29T05:00:00.0",
+            "durationInMilliseconds": 1230000,
+            "bodyBatteryImpact": 4,
+            "shortFeedback": "NAP_RESTFUL"
+          }
+        ],
+        "bodyBatteryDynamicFeedbackEvent": {
+          "eventTimestampGmt": "2026-09-29T06:10:00.0",
+          "bodyBatteryLevel": "HIGH",
+          "feedbackShortType": "DAY_RECOVERING_AND_INACTIVE",
+          "feedbackLongType": "DAY_RECOVERING_AND_INACTIVE"
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "charged": 40,
+        "drained": 51,
+        "bodyBatteryActivityEvent": null,
+        "bodyBatteryDynamicFeedbackEvent": {}
+      }
+    ],
+    "body_battery_events": [
+      {
+        "event": {
+          "eventType": "SLEEP",
+          "eventStartTimeGmt": "2026-09-28T15:30:00.0",
+          "durationInMilliseconds": 27010000,
+          "bodyBatteryImpact": 55,
+          "shortFeedback": "SLEEP_RESTFUL"
+        },
+        "activityName": null,
+        "averageStress": 14.0,
+        "stressValuesArray": [],
+        "bodyBatteryValuesArray": []
+      }
+    ],
+    "rhr": {
+      "userProfileId": 1,
+      "statisticsStartDate": "2026-09-29",
+      "statisticsEndDate": "2026-09-29",
+      "allMetrics": {
+        "metricsMap": {
+          "WELLNESS_RESTING_HEART_RATE": [
+            {
+              "value": 49.0,
+              "calendarDate": "2026-09-29"
+            }
+          ]
+        }
+      },
+      "groupedMetrics": null
+    },
+    "heart_rates": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "maxHeartRate": 142,
+      "minHeartRate": 46,
+      "restingHeartRate": 49,
+      "lastSevenDaysAvgRestingHeartRate": 50,
+      "heartRateValues": [
+        [
+          1759075200000,
+          52
+        ],
+        [
+          1759075320000,
+          null
+        ],
+        [
+          1759075440000,
+          58
+        ],
+        [
+          1759075560000,
+          0
+        ],
+        [
+          1759075680000,
+          61
+        ]
+      ]
+    },
+    "stress": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "maxStressLevel": 88,
+      "avgStressLevel": 27,
+      "stressValuesArray": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          30
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          5,
+          55
+        ],
+        [
+          6,
+          80
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          8,
+          null
+        ],
+        [
+          9,
+          26
+        ]
+      ]
+    },
+    "respiration": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "lowestRespirationValue": 11.0,
+      "highestRespirationValue": 19.0,
+      "avgWakingRespirationValue": 14.25,
+      "avgSleepRespirationValue": 13.15,
+      "respirationValuesArray": []
+    },
+    "respiration_partial": {
+      "calendarDate": "2026-09-28",
+      "lowestRespirationValue": null,
+      "highestRespirationValue": 20.0,
+      "avgWakingRespirationValue": 15.0,
+      "avgSleepRespirationValue": null
+    },
+    "spo2": {
+      "userProfilePK": 1,
+      "calendarDate": "2026-09-29",
+      "averageSpO2": 95.0,
+      "lowestSpO2": 89,
+      "latestSpO2": 96,
+      "latestSpO2TimestampLocal": "2026-09-29T06:05:00.0",
+      "lastSevenDaysAvgSpO2": 95.14,
+      "avgSleepSpO2": 95.0,
+      "spO2HourlyAverages": [
+        [
+          1759075200000,
+          95
+        ],
+        [
+          1759078800000,
+          94
+        ]
+      ]
+    },
+    "spo2_sparse": {
+      "calendarDate": "2026-09-28",
+      "averageSpO2": null,
+      "lowestSpO2": null,
+      "spO2HourlyAverages": []
+    },
+    "hrv": {
+      "userProfilePk": 1,
+      "hrvSummary": {
+        "calendarDate": "2026-09-29",
+        "weeklyAvg": 52,
+        "lastNightAvg": 48,
+        "lastNight5MinHigh": 71,
+        "baseline": {
+          "lowUpper": 41,
+          "balancedLow": 45,
+          "balancedUpper": 60,
+          "markerValue": 0.42
+        },
+        "status": "BALANCED",
+        "feedbackPhrase": "HRV_BALANCED_5",
+        "createTimeStamp": "2026-09-28T23:10:00.0"
+      },
+      "hrvReadings": [
+        {
+          "hrvValue": 45,
+          "readingTimeGMT": "2026-09-28T15:35:00.0",
+          "readingTimeLocal": "2026-09-28T23:35:00.0"
+        },
+        {
+          "hrvValue": 51,
+          "readingTimeGMT": "2026-09-28T15:40:00.0",
+          "readingTimeLocal": "2026-09-28T23:40:00.0"
+        }
+      ],
+      "startTimestampGMT": "2026-09-28T15:30:00.0",
+      "sleepStartTimestampLocal": "2026-09-28T23:30:00.0",
+      "sleepEndTimestampLocal": "2026-09-29T07:25:00.0"
+    },
+    "hrv_low": {
+      "hrvSummary": {
+        "calendarDate": "2026-09-27",
+        "weeklyAvg": 49.4,
+        "lastNightAvg": 39.95,
+        "lastNight5MinHigh": null,
+        "baseline": null,
+        "status": "UNBALANCED",
+        "feedbackPhrase": "HRV_UNBALANCED_2"
+      },
+      "hrvReadings": null
+    },
+    "hrv_null_summary": {
+      "hrvSummary": null,
+      "hrvReadings": []
+    }
+  },
+  "cases": [
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full"
+      }
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60": "sleep_null_scores"
+      }
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60": "sleep_no_dto"
+      }
+    },
+    {
+      "tool": "get_sleep_summary",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_sleep_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full"
+      }
+    },
+    {
+      "tool": "get_sleep_data",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-29&nonSleepBufferMinutes=60": "sleep_full",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-28&nonSleepBufferMinutes=60": "sleep_null_scores",
+        "/wellness-service/wellness/dailySleepData/tester?date=2026-09-27&nonSleepBufferMinutes=60": "sleep_no_dto"
+      }
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_sleep_summary_range",
+      "args": {
+        "start_date": "2026-09-29",
+        "end_date": "2026-09-28"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv"
+      }
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-29",
+        "return_timeseries": true
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv"
+      }
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-27": "hrv_low"
+      }
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-25"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-25": "hrv_null_summary"
+      }
+    },
+    {
+      "tool": "get_hrv_data",
+      "args": {
+        "date": "2026-09-24"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_hrv_trend",
+      "args": {
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/hrv-service/hrv/2026-09-29": "hrv",
+        "/hrv-service/hrv/2026-09-27": "hrv_low",
+        "/hrv-service/hrv/2026-09-26": "hrv_null_summary"
+      }
+    },
+    {
+      "tool": "get_hrv_trend",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_body_battery",
+      "args": {
+        "start_date": "2026-09-28",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/bodyBattery/reports/daily?endDate=2026-09-29&startDate=2026-09-28": "body_battery"
+      }
+    },
+    {
+      "tool": "get_body_battery",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_body_battery_events",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/bodyBattery/events/2026-09-29": "body_battery_events"
+      }
+    },
+    {
+      "tool": "get_body_battery_events",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_training_readiness",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      }
+    },
+    {
+      "tool": "get_training_readiness",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      }
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-26"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-26": "readiness_no_morning"
+      }
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-25"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-25": "readiness_upstream_fixture"
+      }
+    },
+    {
+      "tool": "get_morning_training_readiness",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-29": "readiness_list"
+      }
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-28": "readiness_latest_unknown"
+      }
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-27"
+      },
+      "routes": {
+        "/metrics-service/metrics/trainingreadiness/2026-09-27": "readiness_reached_zero"
+      }
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-24"
+      },
+      "routes": {
+        "/activitylist-service/activities/search/activities?limit=20&start=0": "activities"
+      }
+    },
+    {
+      "tool": "get_recovery_time_remaining",
+      "args": {
+        "date": "2026-09-23"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_rhr_day",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/userstats-service/wellness/daily/tester?fromDate=2026-09-29&metricId=60&untilDate=2026-09-29": "rhr"
+      }
+    },
+    {
+      "tool": "get_rhr_day",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_heart_rates_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailyHeartRate/tester?date=2026-09-29": "heart_rates"
+      }
+    },
+    {
+      "tool": "get_heart_rates_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_stress_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/dailyStress/2026-09-29": "stress"
+      }
+    },
+    {
+      "tool": "get_stress_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_respiration_summary",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/respiration/2026-09-29": "respiration"
+      }
+    },
+    {
+      "tool": "get_respiration_summary",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_respiration_trend",
+      "args": {
+        "start_date": "2026-09-27",
+        "end_date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/respiration/2026-09-29": "respiration",
+        "/wellness-service/wellness/daily/respiration/2026-09-28": "respiration_partial"
+      }
+    },
+    {
+      "tool": "get_respiration_trend",
+      "args": {
+        "start_date": "2026-09-20",
+        "end_date": "2026-09-21"
+      },
+      "routes": {}
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-29"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/spo2/2026-09-29": "spo2"
+      }
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-28"
+      },
+      "routes": {
+        "/wellness-service/wellness/daily/spo2/2026-09-28": "spo2_sparse"
+      }
+    },
+    {
+      "tool": "get_spo2_data",
+      "args": {
+        "date": "2026-09-20"
+      },
+      "routes": {}
+    }
+  ]
+}

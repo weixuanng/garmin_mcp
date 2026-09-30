@@ -1,0 +1,14 @@
+{
+  "_comment": "The upstream versions this port matches. MAINTAINING.md explains how to bring in newer ones.",
+  "garmin_mcp": {
+    "repo": "https://github.com/Taxuspt/garmin_mcp",
+    "commit": "cfc5d799ab0f165e837f1188a1d093c65838aaf7",
+    "ported_from": ["src/garmin_mcp/health_wellness.py", "src/garmin_mcp/training.py"]
+  },
+  "garminconnect": {
+    "repo": "https://github.com/cyberjunky/python-garminconnect",
+    "version": "0.3.2",
+    "ported_from": ["garminconnect/client.py (DI token refresh, request headers, error handling)", "garminconnect/__init__.py (endpoint paths and params)"]
+  },
+  "last_checked": "2026-09-30"
+}
