@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "garmin-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  // global_fetch_strictly_public is required for Client ID Metadata Documents (claude.ai).
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+
+  "vars": {
+    "TIMEZONE": "Asia/Singapore",
+    // Free-plan Workers allow 50 outbound requests and 10 ms CPU per call.
+    // Range tools stay under that; sleep nights are big, so they get a lower cap.
+    "MAX_RANGE_DAYS": "31",
+    "MAX_SLEEP_NIGHTS": "14",
+    "VERSION": "0.1.0"
+  },
+
+  // OAuth grants and tokens for the Claude connector. Wrangler creates the
+  // namespace on first deploy and writes its id back here.
+  "kv_namespaces": [{ "binding": "OAUTH_KV" }],
+
+  // Holds the Garmin token; serializes refreshes.
+  "durable_objects": {
+    "bindings": [{ "name": "GARMIN_TOKENS", "class_name": "GarminTokenStore" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GarminTokenStore"] }],
+
+  // Daily at 07:07 Singapore time: refresh the Garmin token and record health.
+  "triggers": { "crons": ["7 23 * * *"] }
+
+  // Secrets (set with `npx wrangler secret put <NAME>`):
+  //   SETUP_PASSCODE  passcode for the connect and /setup pages (8+ characters)
+}
