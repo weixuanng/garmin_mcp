@@ -1,8 +1,8 @@
 # Maintaining the Cloudflare port
 
 Runbook for keeping `cloudflare/` in step with upstream and for fixing it when
-it breaks. Written for Claude sessions (the daily update routine, or the owner
-saying "fix"), but it works by hand too.
+it breaks. Written for Claude sessions (the owner asking to "update the Garmin
+server" or saying "fix"), but it works by hand too.
 
 The Worker is deployed by Cloudflare Workers Builds from `main` (root
 directory `cloudflare/`, build command `npm test`). A push to `main` that
@@ -18,7 +18,7 @@ passes the tests is a deploy; a push that fails them deploys nothing.
    owner can fix this: run `garmin-mcp-auth` locally and paste the token at
    `/setup` (see README.md). Claude cannot do it for them.
 
-## Daily upstream check
+## Pulling in upstream changes
 
 Run from the repository root, on an up-to-date `main`.
 
@@ -91,8 +91,8 @@ Run from the repository root, on an up-to-date `main`.
    and paste the new token at `/setup`. Nothing to change in code.
 3. "API Error 4xx/5xx", empty data that used to exist, or an error in every
    tool → Garmin probably changed something. Check for a newer
-   `garminconnect` release and recent upstream commits, then run the daily
-   check above; the fix is usually already upstream.
+   `garminconnect` release and recent upstream commits, then follow "Pulling
+   in upstream changes" above; the fix is usually already upstream.
 4. The connector itself fails (Claude can't connect, 500s) → look at the
    Worker's logs in the Cloudflare dashboard (Workers → garmin-mcp → Logs), or
    ask the owner for them, and reproduce with `npm run test:e2e`.
