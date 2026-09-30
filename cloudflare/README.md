@@ -64,16 +64,43 @@ wrong tries lock the form for 15 minutes.
 
 Garmin has no "Sign in with Garmin" for apps like this, so you sign in once on
 your own computer and paste the resulting token into the Worker. Your password
-never leaves your machine. With [uv](https://docs.astral.sh/uv/) installed:
+never leaves your machine. The login helper runs through
+[uv](https://docs.astral.sh/uv/), which downloads the developer's code for you.
 
-```bash
-uvx --python 3.12 --from git+https://github.com/Taxuspt/garmin_mcp garmin-mcp-auth --token-path ~/.garmin_cloud
+**Windows (PowerShell)**
+
+```powershell
+# 1. Install uv and Git, then close and reopen PowerShell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+winget install --id Git.Git -e --source winget
+
+# 2. Sign in (asks for email, password and the MFA code); wait for SUCCESS
+uvx --python 3.12 --from git+https://github.com/Taxuspt/garmin_mcp garmin-mcp-auth --token-path $HOME\.garmin_cloud
+
+# 3. Copy the token to the clipboard
+Get-Content $HOME\.garmin_cloud\garmin_tokens.json | Set-Clipboard
 ```
 
-It asks for your Garmin email, password and MFA code, then writes
-`~/.garmin_cloud/garmin_tokens.json`. Keep this token separate from the one a
-local Garmin MCP server uses (`~/.garminconnect`), because two servers
-refreshing the same token can sign each other out.
+**Mac (Terminal)**
+
+```bash
+# 1. Install uv, then quit and reopen Terminal
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# 2. Sign in (asks for email, password and the MFA code); wait for SUCCESS
+uvx --python 3.12 --from git+https://github.com/Taxuspt/garmin_mcp garmin-mcp-auth --token-path ~/.garmin_cloud
+
+# 3. Copy the token to the clipboard
+cat ~/.garmin_cloud/garmin_tokens.json | pbcopy
+```
+
+If every login method reports `429`, Garmin is rate-limiting your internet
+connection. Don't retry right away; run step 2 once from a phone hotspot, or
+try again a few hours later.
+
+Keep this token separate from the one a local Garmin MCP server uses
+(`~/.garminconnect`), because two servers refreshing the same token can sign
+each other out.
 
 ### 4. Connect Claude
 
